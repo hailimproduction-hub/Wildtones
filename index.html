@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildtones - Nature & Music for TikTok</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a5f2a 0%, #0d3320 50%, #1a472a 100%);
+            min-height: 100vh;
+            color: white;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+        }
+        .logo {
+            font-size: 4rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #00ff88, #00cc6a, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(0,255,136,0.3);
+            margin-bottom: 20px;
+        }
+        .tagline {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            letter-spacing: 2px;
+        }
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin: 60px 0;
+        }
+        .hero-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .hero-text p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        .hero-visual {
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            text-align: center;
+        }
+        .music-icon {
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        .feature-card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        .feature-card p {
+            opacity: 0.8;
+            line-height: 1.5;
+        }
+        .cta-section {
+            text-align: center;
+            padding: 80px 20px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 30px;
+            margin: 60px 0;
+        }
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #00ff88, #00cc6a);
+            color: #0d3320;
+            padding: 20px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 30px rgba(0,255,136,0.3);
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0,255,136,0.5);
+        }
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            margin-top: 60px;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        .footer-links a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        .copyright {
+            opacity: 0.6;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .hero { grid-template-columns: 1fr; }
+            .logo { font-size: 2.5rem; }
+            .hero-text h2 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🌿 Wildtones</div>
+            <div class="tagline">La nature rencontre la musique sur TikTok</div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Publiez automatiquement du contenu nature & musique sur TikTok</h2>
+                <p>Wildtones est une application innovante qui combine les sons de la nature avec des mélodies harmonieuses pour créer du contenu apaisant et viral sur TikTok. Notre agent automatisé publie quotidiennement des vidéos relaxantes.</p>
+            </div>
+            <div class="hero-visual">
+                <div class="music-icon">🎵🌲🦋</div>
+                <p>Automatisation intelligente<br>Contenu naturel authentique<br>Engagement garanti</p>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🌲</div>
+                <h3>Sons Naturels</h3>
+                <p>Bibliothèque de sons authentiques de forêts, rivières, oiseaux et ambiances naturelles.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎼</div>
+                <h3>Musique Originale</h3>
+                <p>Mélodies composées spécialement pour accompagner et sublimer les ambiances naturelles.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>Publication Auto</h3>
+                <p>Agent intelligent qui publie automatiquement votre contenu sur TikTok aux meilleurs horaires.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3>Viral Growth</h3>
+                <p>Optimisation algorithmique pour maximiser la portée et l'engagement de vos vidéos.</p>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Prêt à faire grandir votre présence TikTok ?</h2>
+            <p>Rejoignez Wildtones et laissez la nature parler pour vous.</p>
+            <a href="#" class="cta-button">Commencer Maintenant</a>
+        </section>
+
+        <footer>
+            <div class="footer-links">
+                <a href="terms.html">Terms of Service</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="mailto:contact@wildtones.app">Contact</a>
+            </div>
+            <div class="copyright">
+                © 2026 Wildtones. Tous droits réservés.
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
